@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    scanf("%f","Enter a decimal number:");
-    printf("%f");
+    float num
+    printf("enter a floating-point");
+    scanf("%f,&num");
     return 0;
 }
