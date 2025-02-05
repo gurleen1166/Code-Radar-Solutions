@@ -1,7 +1,8 @@
 #include <stdio.h>
- const float pi=3.14;
+ 
 int main(){
     int r;
+    float pi=3.14;
     float area;
     scanf("%d",&r);
     area=pi*r*r;
