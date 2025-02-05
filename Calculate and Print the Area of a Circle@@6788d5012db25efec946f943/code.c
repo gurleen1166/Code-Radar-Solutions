@@ -1,5 +1,5 @@
 #include <stdio.h>
-float pi=3.14;
+ const float pi=3.14;
 int main(){
     int r;
     float area;
