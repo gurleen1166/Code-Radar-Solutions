@@ -5,10 +5,10 @@ int main(){
     if(a>0){
         printf("Positive");
     }
-    else(a<0){
+    if(a<0){
         printf("Negative");
     }
-    else(a==0){
+    if(a==0){
         printf("Zero")
     }
     return 0;
