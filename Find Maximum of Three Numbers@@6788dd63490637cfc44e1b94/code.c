@@ -5,10 +5,10 @@ int main(){
     if (a>=b && a>=c){
         printf("%d",a);
     }
-    elif (b>=a && b>=c){
+    if else (b>=a && b>=c){
         printf("%d",b);
     }
-     elif (c>=b && c>=a){
+    if else (c>=b && c>=a){
         printf("%d",c);
     }
     return 0;
