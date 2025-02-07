@@ -11,8 +11,5 @@ int main(){
     if (c>=b && c>=a){
         printf("%d",c);
     }
-    if (a==b==c==0){
-        printf("%d",a);
-    }
     return 0;
 }
