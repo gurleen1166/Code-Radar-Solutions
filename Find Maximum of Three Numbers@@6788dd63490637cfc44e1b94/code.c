@@ -8,8 +8,8 @@ int main(){
     if (b>=a && b>=c){
         printf("%d",b);
     }
-     else{
-         printf("%d",c);
+     if (c>=b && c>=a){
+        printf("%d",c);
     }
     return 0;
 }
