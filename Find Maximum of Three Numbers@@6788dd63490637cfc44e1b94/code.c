@@ -5,10 +5,10 @@ int main(){
     if (a>=b && a>=c){
         printf("%d",a);
     }
-    if else (b>=a && b>=c){
+    else (b>=a && b>=c){
         printf("%d",b);
     }
-     else (c>=b && c>=a){
+    else (c>=b && c>=a){
         printf("%d",c);
     }
     return 0;
