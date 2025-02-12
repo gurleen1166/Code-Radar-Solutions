@@ -20,6 +20,5 @@ int main() {
     else {
         printf("Special Character", ch);
     }
-
-    return 0;
+return 0;
 }
