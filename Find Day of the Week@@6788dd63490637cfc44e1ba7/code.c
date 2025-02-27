@@ -29,7 +29,7 @@ int main() {
             printf("Sunday\n");
             break;
         default:
-            printf("Invalid day number\n");
+            printf("Invalid ");
     }
     
     return 0;
