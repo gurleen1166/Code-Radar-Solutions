@@ -2,8 +2,9 @@
 #include<stdio.h>
 int main(){ 
     int num1,num2;
-    char opr
-    scanf("%lf%lf%c",&num1,&num2,&opr);
+    char opr;
+    scanf("%lf%lf%",&num1,&num2);
+    scanf("%c",&opr);
         switch (opr) {
         case '+':
             printf("%.2lf + %.2lf = %.2lf\n", num1, num2, num1 + num2);
