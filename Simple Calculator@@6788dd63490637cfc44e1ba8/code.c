@@ -1,23 +1,28 @@
-// Your code here...
 #include<stdio.h>
-int main(){ 
-    int num1,num2;
+
+int main() { 
+    int num1, num2;
     char opr;
-    scanf("%d%d%",&num1,&num2);
-    scanf("%c",&opr);
-        switch (opr) {
+
+    // Read the two integers
+    scanf("%d%d", &num1, &num2);
+
+    // Read the operator, and handle any leftover newline character from the previous input
+    scanf(" %c", &opr);  // Adding a space before %c to consume any lingering newline
+
+    switch (opr) {
         case '+':
-            printf("%d + %d = %d", num1, num2, num1 + num2);
+            printf("%d + %d = %d\n", num1, num2, num1 + num2);
             break;
         case '-':
-            printf("%.2lf - %.2lf = %.2lf\n", num1, num2, num1 - num2);
+            printf("%d - %d = %d\n", num1, num2, num1 - num2);
             break;
         case '*':
-            printf("%.2lf * %.2lf = %.2lf\n", num1, num2, num1 * num2);
+            printf("%d * %d = %d\n", num1, num2, num1 * num2);
             break;
         case '/':
             if (num2 != 0) {
-                printf("%.2lf / %.2lf = %.2lf\n", num1, num2, num1 / num2);
+                printf("%d / %d = %d\n", num1, num2, num1 / num2);
             } else {
                 printf("Error! Division by zero.\n");
             }
@@ -28,5 +33,3 @@ int main(){
 
     return 0;
 }
-
-
