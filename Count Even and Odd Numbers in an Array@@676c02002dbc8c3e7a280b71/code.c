@@ -7,18 +7,22 @@ int main(){
         scanf("%d",&a[i]);
     }
     even=a[0];
+    odd=a[0];
     for(i=0;i<n;i++){
         if(a[i]%2==0){
             even=a[i];
         }
-
-    }
-    odd=a[0];
-    for(i=0;i<n;i++){
-        if(a[i]%2!=0){
+        else{
             odd=a[i];
         }
 
     }
+    // odd=a[0];
+    // for(i=0;i<n;i++){
+    //     if(a[i]%2!=0){
+    //         odd=a[i];
+    //     }
+
+    // }
     printf("%d %d",even,odd);
 }
