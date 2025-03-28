@@ -4,7 +4,7 @@ int main(){
     int n,i,j;
     char alphabet;
     scanf("%d",&n);
-    for(i=1;i<n;i++){
+    for(i=1;i<=n;i++){
          alphabet='A';
         for(j=1;j<=i;j++){
             printf("%c",alphabet);
