@@ -25,7 +25,7 @@ int main(){
     int n,i,j,alphabet;
     scanf("%d",&n);
     for(i=n;i>=1;i--){
-        alphabet='A'
+        alphabet='A';
         for(j=1;j<=i;j++){
             printf("%d ",alphabet);
             alphabet++;
