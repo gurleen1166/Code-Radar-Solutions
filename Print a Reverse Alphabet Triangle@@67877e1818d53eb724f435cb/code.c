@@ -27,7 +27,7 @@ int main(){
     for(i=n;i>=1;i--){
         alphabet='A';
         for(j=1;j<=i;j++){
-            printf("%d ",alphabet);
+            printf("%c ",alphabet);
             alphabet++;
         }
         printf("\n");
