@@ -15,7 +15,7 @@ int main(){
     }
     odd=a[0];
     for(i=0;i<n;i++){
-        if(odd==(a[i]%2!==0)){
+        if(odd==(a[i]%2!=0)){
             odd=a[i];
         }
 
