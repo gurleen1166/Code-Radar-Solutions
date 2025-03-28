@@ -8,14 +8,14 @@ int main(){
     }
     even=a[0];
     for(i=0;i<n;i++){
-        if(even==(a[i]%2==0)){
+        if(a[i]%2==0){
             even=a[i];
         }
 
     }
     odd=a[0];
     for(i=0;i<n;i++){
-        if(odd==(a[i]%2!=0)){
+        if(a[i]%2!=0){
             odd=a[i];
         }
 
