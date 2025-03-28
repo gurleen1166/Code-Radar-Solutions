@@ -2,13 +2,13 @@
 #include<stdio.h>
 int main(){
     int n,i,j;
-    int digit;
+    int digit=1;
     scanf("%d",&n);
     for(i=1;i<=n;i++){
-        digit=1;
+       
         for(j=1;j<=i;j++){
             printf("%d ",digit);
-        digit++;
+            digit++;
         }
         printf("\n");
     }
