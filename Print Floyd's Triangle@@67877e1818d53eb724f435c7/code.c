@@ -7,7 +7,7 @@ int main(){
     for(i=1;i<=n;i++){
         digit='1';
         for(j=1;j<=i;j++){
-            printf("%d ",j);
+            printf("%d ",digit);
         j++;
         }
         printf("\n");
