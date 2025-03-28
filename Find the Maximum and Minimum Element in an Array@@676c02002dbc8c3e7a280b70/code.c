@@ -1,7 +1,7 @@
 // Your code here...
 #include<stdio.h>
 int main(){
-    int a[],size,i,max,min;
+    int a[100],size,i,max,min;
     scanf("%d",&size);
     for(i=0;i<size;i++)
     {
