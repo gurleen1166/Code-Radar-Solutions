@@ -5,7 +5,7 @@ int main(){
     scanf("%d",&n);
     for(i=1;i<=n;i++){
         cal=i*n+cal;
-    }
-    printf("n x i = %d",cal);
+    
+    printf("n x i = %d",cal);}
     return 0;
 }
