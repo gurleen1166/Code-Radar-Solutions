@@ -1,11 +1,11 @@
 // Your code here...
 #include<stdio.h>
 int main(){
-    int n,i,cal=0;
+    int n,i;
     scanf("%d",&n);
     for(i=1;i<=n;i++){
-        cal=i*n+cal;
+        
     
-    printf("n x i = %d",cal);}
+    printf("n x i = %d",n*i);}
     return 0;
 }
