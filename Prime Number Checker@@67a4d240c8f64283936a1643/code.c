@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to check if a number is prime
-void checkPrime(int arr[], int num) {
+void isPrime(int arr[], int num) {
     for (int i = 0; i < num; i++) {
         int n = arr[i];
         int isPrime = 1;  // Assume the number is prime initially
