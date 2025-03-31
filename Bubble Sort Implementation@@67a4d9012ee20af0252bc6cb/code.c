@@ -1,10 +1,10 @@
 // Your code here...
 #include <stdio.h>
-int bubbleSort(int arr, int n){
+int bubbleSort(int arr[], int n){
     for(int i=n-1;i>0;i--){
-        for(int j=0;j<i-1;j++){
+        for(int j=0;j<i;j++){
             if(arr[j]>arr[j+1]){
-                temp=arr[j];
+               int temp=arr[j];
                 arr[j]=arr[j+1];
                 arr[j+1]=temp;
             }
@@ -12,9 +12,9 @@ int bubbleSort(int arr, int n){
     }
 }
 
-void printArray(int arr,int n){
+void printArray(int arr[],int n){
     for(int i=0;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     
     }
 }
@@ -26,6 +26,6 @@ int main(){
         scanf("%d",&arr[i]);
     }
     bubbleSort(arr,n);
-    printArry(arr,n);
+    printArray(arr,n);
     return 0;
 }
