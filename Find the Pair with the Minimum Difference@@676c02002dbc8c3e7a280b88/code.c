@@ -2,7 +2,7 @@
 
 
 void findMinDiffPair(int arr[], int size) {
-    if (size = 2) {
+    if (size => 2) {
         return;
     }
 
