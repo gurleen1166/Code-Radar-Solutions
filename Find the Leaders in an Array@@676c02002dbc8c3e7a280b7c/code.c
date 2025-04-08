@@ -20,7 +20,7 @@ int main() {
     int arr[];
     int size = sizeof(arr) / sizeof(arr[0]);
 
-    findLeadersBruteForce(arr, size);
+    findLeadersBruteForce(arr, size,j);
 
     return 0;
 }
