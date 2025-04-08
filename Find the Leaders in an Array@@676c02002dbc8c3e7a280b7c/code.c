@@ -23,7 +23,7 @@ int main() {
     findLeaders(arr, size);
 
     for (int i = 0; i < size; i++) {
-        scanf("%d",&size);
+        scanf("%d",&size);}
 
     return 0;
 }
