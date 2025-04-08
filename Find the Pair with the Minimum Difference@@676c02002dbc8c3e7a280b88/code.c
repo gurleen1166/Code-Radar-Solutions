@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sortArray(int arr[], int size){
+int sortArray(int arr[size], int size){
     if (size < 2) {
         return -1;
         } 
