@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void sortArray(int arr[], int size) {
-    for (int i = 0; i < size-1; i++) {
-        if (size < 2) {
+void sortArray(int arr[], int size)
+if (size < 2) {
         return -1;
-    }
+    } {
+    for (int i = 0; i < size-1; i++) {
+        
         for (int j = 0; j < size-1-i; j++) {
             if (arr[j] > arr[j+1]) {
                 int tmp = arr[j];
