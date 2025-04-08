@@ -10,7 +10,7 @@ int main() {
     }
 
     int maxFreq = 0;
-    int mostFrequent = INT_MAX;
+    int mostFrequent = arr[0];
 
     for (int i = 0; i < size; i++) {
         int count = 1;
