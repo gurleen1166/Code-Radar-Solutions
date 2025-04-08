@@ -8,7 +8,7 @@ void findLeaders(int arr[], int size) {
                 break;
             }
         }
-        if (int j == size) {
+        if ( j == size) {
             printf("%d ", arr[i]);
         }
     }
@@ -19,7 +19,7 @@ void findLeaders(int arr[], int size) {
 int main() {
     int arr[];
     int size = sizeof(arr) / sizeof(arr[0]);
-
+    scanf("%d",&size);
     findLeaders(arr, size);
 
     return 0;
