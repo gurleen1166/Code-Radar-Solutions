@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 #include <stdlib.h>  // for abs()
 
@@ -22,12 +21,16 @@ void findMinDiffPair(int arr[], int size) {
         }
     }
 
-  
 }
 
 int main() {
     int size;
     scanf("%d", &size);
+
+    if (size <= 0) {
+       
+        return -1;
+    }
 
     int arr[size];
     for (int i = 0; i < size; i++) {
