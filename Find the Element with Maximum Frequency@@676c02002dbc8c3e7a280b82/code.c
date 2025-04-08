@@ -1,41 +1,35 @@
 #include <stdio.h>
+#include <limits.h>
 
- #define MAX 1000  // Max possible value in array elements
+int main() {
+    int size;
+    scanf("%d", &size);
 
-void findMaxFrequency(int arr[], int size) {
-    int freq[MAX] = {0};  // Frequency array
-    int maxCount = 0;
-    int mostFrequent;
+    int arr[size];
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int maxFreq = 0;
+    int mostFrequent = INT_MAX;
 
     for (int i = 0; i < size; i++) {
-        freq[arr[i]]++;
+        int count = 1;
 
-        if (freq[arr[i]] > maxCount) {
-            maxCount = freq[arr[i]];
+        // Count frequency of arr[i]
+        for (int j = i + 1; j < size; j++) {
+            if (arr[i] == arr[j]) {
+                count++;
+            }
+        }
+
+        // Check if this is a new max frequency
+        if (count > maxFreq || (count == maxFreq && arr[i] < mostFrequent)) {
+            maxFreq = count;
             mostFrequent = arr[i];
         }
     }
 
-    
-}
-
-int main() {
-    int size;
-   
-    scanf("%d", &size);
-
-    int arr[size];
-
-   
-    for (int i = 0; i < size; i++) {
-        scanf("%d", &arr[i]);
-        if (arr[i] < 0 || arr[i] >= MAX) {
-            
-            return 1;
-        }
-    }
-
-    findMaxFrequency(arr, size);
-
+    printf("%d\n", mostFrequent);
     return 0;
 }
