@@ -13,22 +13,29 @@ void sortArray(int arr[], int size) {
 }
 
 void findMinDiffPair(int arr[], int size) {
-    // if (size < 2) {
-    //     return;
-    // }
-
     sortArray(arr, size);
 
-    int minDiff = arr[1] - arr[0];
+    int diff = arr[1] - arr[0];
+    if (diff < 0) diff = -diff;
+
+    int minDiff = diff;
     int a = arr[0], b = arr[1];
 
     for (int i = 1; i < size - 1; i++) {
         int diff = arr[i + 1] - arr[i];
+        if (diff < 0) diff = -diff;
+
         if (diff < minDiff) {
             minDiff = diff;
             a = arr[i];
             b = arr[i + 1];
         }
+    }
+
+    if (a > b) {
+        int temp = a;
+        a = b;
+        b = temp;
     }
 
     printf("%d %d\n", a, b);
