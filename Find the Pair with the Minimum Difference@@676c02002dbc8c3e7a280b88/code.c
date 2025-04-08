@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Bubble sort
 void sortArray(int arr[], int size) {
     for (int i = 0; i < size - 1; i++) {
         for (int j = 0; j < size - i - 1; j++) {
@@ -13,10 +12,9 @@ void sortArray(int arr[], int size) {
     }
 }
 
-// Find minimum difference pair
-int findMinDiffPair(int arr[], int size) {
+void findMinDiffPair(int arr[], int size) {
     if (size < 2) {
-        return -1;
+        return;
     }
 
     sortArray(arr, size);
@@ -33,7 +31,6 @@ int findMinDiffPair(int arr[], int size) {
         }
     }
 
-   
     printf("%d %d\n", a, b);
 }
 
@@ -42,6 +39,7 @@ int main() {
     scanf("%d", &size);
 
     if (size < 2) {
+       
         return -1;
     }
 
