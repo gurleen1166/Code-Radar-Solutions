@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <limits.h>
 
 int main() {
     int size;
@@ -15,15 +14,11 @@ int main() {
 
     for (int i = 0; i < size; i++) {
         int count = 1;
-
-        // Count frequency of arr[i]
         for (int j = i + 1; j < size; j++) {
             if (arr[i] == arr[j]) {
                 count++;
             }
         }
-
-        // Check if this is a new max frequency
         if (count > maxFreq || (count == maxFreq && arr[i] < mostFrequent)) {
             maxFreq = count;
             mostFrequent = arr[i];
