@@ -26,11 +26,11 @@ int main() {
 
     int arr[size];
 
-    printf("Enter array elements (between 0 and %d):\n", MAX - 1);
+   
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
         if (arr[i] < 0 || arr[i] >= MAX) {
-            printf("Value out of range!\n");
+            
             return 1;
         }
     }
