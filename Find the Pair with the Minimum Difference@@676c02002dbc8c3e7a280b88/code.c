@@ -27,7 +27,7 @@ int main() {
     int size;
     scanf("%d", &size);
 
-    if (size <= 0) {
+    if (size <0) {
        
         return -1;
     }
