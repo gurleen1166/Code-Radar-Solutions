@@ -11,14 +11,16 @@ void sortArray(int arr[], int size) {
             }
         }
     }
+     if (size < 2) {
+        return -1;
+    }
 }
 
 int main() {
     int size;
     scanf("%d", &size);
-    if (size < 2) {
-        
-        return -1;
+    // if (size < 2) {
+        // return -1;
     }
 
     int arr[size];
