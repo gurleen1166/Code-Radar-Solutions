@@ -24,7 +24,6 @@ int main() {
 
     if (size < 2) {
         return -1;
-        break;
     }
 
     int arr[size];
