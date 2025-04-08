@@ -12,9 +12,9 @@ void sortArray(int arr[], int size) {
     }
 }
 
-void findMinDiffPair(int arr[], int size) {
+int findMinDiffPair(int arr[], int size) {
     if (size < 2) {
-        return;
+        return -1;
     }
 
     sortArray(arr, size);
