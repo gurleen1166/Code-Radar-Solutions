@@ -22,8 +22,8 @@ int main() {
     int size;
     scanf("%d", &size);
 
-    if (size < 2) {
-        return ;
+    if (size==1) {
+        return -1;
     }
 
     int arr[size];
