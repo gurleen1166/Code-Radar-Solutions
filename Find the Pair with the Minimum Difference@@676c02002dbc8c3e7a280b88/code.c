@@ -31,7 +31,7 @@ int main() {
     }
 
     // Step 1: Sort array
-    sortArray(arr, size);
+    printf("%d",sortarray(arr,size));
 
     // Step 2: Find minimum difference between adjacent sorted elements
     int minDiff = abs(arr[1] - arr[0]);
