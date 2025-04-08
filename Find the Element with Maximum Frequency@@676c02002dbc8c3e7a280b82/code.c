@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// #define MAX 1000  // Max possible value in array elements
+ #define MAX 1000  // Max possible value in array elements
 
 void findMaxFrequency(int arr[], int size) {
     int freq[MAX] = {0};  // Frequency array
