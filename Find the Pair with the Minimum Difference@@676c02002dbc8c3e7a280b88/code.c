@@ -21,10 +21,10 @@ void findMinDiffPair(int arr[], int size) {
         }
     }
 
-}  
+ 
     int first = (minPair1 < minPair2) ? minPair1 : minPair2;
     int second = (minPair1 < minPair2) ? minPair2 : minPair1;
-
+}
 
 int main() {
     int size;
