@@ -8,7 +8,7 @@ void findLeadersBruteForce(int arr[], int size) {
                 break;
             }
         }
-        if (j == size) {
+        if (int j == size) {
             printf("%d ", arr[i]);
         }
     }
