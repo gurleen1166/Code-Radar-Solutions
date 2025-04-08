@@ -38,7 +38,7 @@ void findMinDiffPair(int arr[], int size) {
 
 int main() {
     int size;
-    if (scanf("%d", &size) != 1 || size < 2) {
+    if (scanf("%d", &size) == 1 ) {
         
         return -1; // return from main if size is invalid
     }
