@@ -1,37 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>  // for abs()
 
-void findMinDiffPair(int arr[], int size) {
-    if (size < 2) {
-        return;
-    }
-
-    int minDiff = abs(arr[0] - arr[1]);
-    int minPair1 = arr[0], minPair2 = arr[1];
-
-    for (int i = 0; i < size; i++) {
-        for (int j = i + 1; j < size; j++) {
-            int diff = abs(arr[i] - arr[j]);
-
-            if (diff < minDiff) {
-                minDiff = diff;
-                minPair1 = arr[i];
-                minPair2 = arr[j];
+// Simple bubble sort
+void sortArray(int arr[], int size) {
+    for (int i = 0; i < size-1; i++) {
+        for (int j = 0; j < size-1-i; j++) {
+            if (arr[j] > arr[j+1]) {
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
             }
         }
     }
+}
 
- 
-    int first = (minPair1 < minPair2) ? minPair1 : minPair2;
-    int second = (minPair1 < minPair2) ? minPair2 : minPair1;
+// Function to get absolute difference without using abs()
+int getDiff(int a, int b) {
+    return (a > b) ? (a - b) : (b - a);
 }
 
 int main() {
     int size;
     scanf("%d", &size);
 
-    if (size <= 0) {
-        return -1;
+    if (size < 2) {
+        return 1;
     }
 
     int arr[size];
@@ -39,7 +31,22 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    findMinDiffPair(arr, size);
+    sortArray(arr, size);
+
+    int minDiff = getDiff(arr[0], arr[1]);
+    int a = arr[0], b = arr[1];
+
+    for (int i = 1; i < size - 1; i++) {
+        int diff = getDiff(arr[i], arr[i + 1]);
+        if (diff < minDiff) {
+            minDiff = diff;
+            a = arr[i];
+            b = arr[i + 1];
+        }
+    }
+
+    // Already sorted, so a < b guaranteed
+    printf("%d %d\n", a, b);
 
     return 0;
 }
