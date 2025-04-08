@@ -14,7 +14,7 @@ void sortArray(int arr[], int size) {
 
 int findMinDiffPair(int arr[], int size) {
     if (size < 2) {
-        return -1;
+        return;
     }
 
     sortArray(arr, size);
