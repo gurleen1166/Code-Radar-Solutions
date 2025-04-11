@@ -19,9 +19,12 @@ void sortDescending(int arr[], int n) {
 int main() {
     int n;
     scanf("%d",&n);
-    int arr[n] ;  // Example with all elements the same
-     n = sizeof(arr) / sizeof(arr[0]);
+    int arr[n] ; 
 
+    // Read array elements from user
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
     sortDescending(arr, n);
 
     int secondLargest = -1;
