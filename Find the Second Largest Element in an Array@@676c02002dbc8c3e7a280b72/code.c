@@ -19,7 +19,7 @@ void sortDescending(int arr[], int n) {
 int main() {
     int n;
     scanf("%d",&n);
-    int arr[] ;  // Example with all elements the same
+    int arr[n] ;  // Example with all elements the same
      n = sizeof(arr) / sizeof(arr[0]);
 
     sortDescending(arr, n);
